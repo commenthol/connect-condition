@@ -1,0 +1,50 @@
+{
+  "name": "connect-condition",
+  "version": "0.1.0",
+  "description": "middleware to conditionally select middlewares",
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "connect-chain-if": "0.0.3",
+    "mocha": "latest",
+    "standard": "latest",
+    "istanbul": "latest",
+    "jsdox": "latest"
+  },
+  "scripts": {
+    "test": "standard && mocha test/*.mocha.js",
+    "cover": "istanbul cover _mocha --report lcov --report text -- -R dot --check-leaks test/*.mocha.js",
+    "doc": "jsdox -o doc index.js",
+    "lint": "standard",
+    "readme": "markedpp --githubid -i README.md -o README.md",
+    "clean": "rm -rf doc coverage"
+  },
+  "standard": {
+    "ignore": [
+      "/coverage/*",
+      "/tmp/*"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/commenthol/connect-condition"
+  },
+  "keywords": [
+    "connect",
+    "condition",
+    "middleware"
+  ],
+  "author": "commenthol <commenthol@gmail.com>",
+  "maintainers": "commenthol <commenthol@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/commenthol/blanc/issues"
+  },
+  "homepage": "https://github.com/commenthol/blanc"
+}
